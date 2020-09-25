@@ -1,11 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Fill your code*/
 
+body {
+  font-family: "Architects Daughter", cursive;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.top {
+  display: flex;
+  background-color: #87431d;
+  max-height: 70px;
+}
+
+.skew {
+  width: 80px;
+  height: 70px;
+  background-color: #87431d;
+  border-right: 0.2px solid white;
+  transform: skew(-30deg);
+  transform-origin: top;
+}
+
+/*********************************Section ************************************/
+.section {
+  background-color: #c3aed6;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*placing cake logo into top middle */
+.cake-image {
+  text-align: center;
+  width: 300px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 200%;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  left: 550px;
+}
+
+/* Cake Layers */
+#layer1 {
+  width: 245px;
+}
+
+#layer2 {
+  width: 200px;
+}
+
+#layer3 {
+  width: 160px;
+}
+
+#layer4 {
+  width: 120px;
+}
+
+#layer5 {
+  width: 80px;
+}
+
+#layer1,
+#layer2,
+#layer3,
+#layer4,
+#layer5 {
+  height: 30px;
+  border-radius: 10px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+/* Price Table */
+
+.price-table,
+#bill {
+  width: 20%;
+  height: 55%;
+  background-image: url("assets/list_template.png");
+  text-align: center;
+}
+
+.price-table h2,
+#bill h2 {
+  margin-top: 40px;
+  font-family: "Acme", cursive;
+}
+
+.price-table p {
+  margin-top: 10px;
+}
+
+.cake {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 250px;
+  width: 20%;
+}
+
+/* candle image */
+.candle {
+  height: 40px;
+}
+/* candle image container */
+#candle {
+  height: 40px;
+  display: none;
+}
+
+/* Select Layers and buy */
+
+.select-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 14.9vh;
+  background-color: #87431d;
+}
+
+.select-options div {
+  background-color: #537d91;
+  font-size: 1.1em;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#buy {
+  background-color: #c6cf65;
+  color: black;
+}
+
+#bill p {
+  margin: 2px;
+}
+
+#total {
+  color: #c81912;
+  font-size: 1.3em;
+  display: none;
+}
+
+#chocolate,
+#strawberry,
+#vanilla,
+#redvelvet,
+#butterscotch {
+  display: none;
+}
+
+.chocolate-color {
+  background-color: #87431d;
+  /* margin-bottom: 0; */
+}
+
+.redvelvet-color {
+  background-color: #c81912;
+  /* margin-top: 100%; */
+}
+
+.butterscotch-color {
+  background-color: #f1e3cb;
+  /* margin-top: 100%; */
+}
+
+.vanilla-color {
+  background-color: #f6eec9;
+  /* margin-top: 100%; */
+}
+
+.strawberry-color {
+  background-color: #e78fb3;
+  /* margin-top: 100%; */
+}

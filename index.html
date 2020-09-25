@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script src="/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cake</title>
+  </head>
+  <body>
+    <!-- creating top hashed bar -->
+    <div class="top">
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+      <div class="skew"></div>
+    </div>
+
+    <section class="section">
+      <!-- Cake Logo -->
+      <div class="cake-image">
+        <img src="assets/cake.png" alt="Cake" />
+        <p>Cake World</p>
+      </div>
+
+      <!-- Price Table -->
+      <div class="price-table">
+        <h2>Prices</h2>
+        <p>Chocolate ----------- 300</p>
+        <p>Strawberry --------- 100</p>
+        <p>Butterscotch ------ 200</p>
+        <p>Vannila &nbsp;---------------- 250</p>
+        <p>Redvelvet ------------ 350</p>
+      </div>
+
+      <!-- cake layers will aded as per user selection -->
+      <div class="cake"></div>
+
+      <!-- Bill table -->
+      <div id="bill">
+        <h2>Bill</h2>
+        <p id="chocolate">Chocolate ---------- 300</p>
+        <p id="strawberry">Strawberry -------- 100</p>
+        <p id="butterscotch">Butterscotch ----- 200</p>
+        <p id="vanilla">Vannila &nbsp;-------------- 250</p>
+        <p id="redvelvet">Redvelvet ------------ 350</p>
+        <p id="total"></p>
+      </div>
+    </section>
+
+    <!-- Buttons to add cake layers and buy cake -->
+    <div class="select-options">
+      <div class="chocolate-button" onclick="updateState(event)">Chocolate</div>
+      <div class="strawberry-button" onclick="updateState(event)">
+        Strawberry
+      </div>
+      <div class="butterscotch-button" onclick="updateState(event)">
+        Butterscotch
+      </div>
+      <div class="vanilla-button" onclick="updateState(event)">Vanilla</div>
+      <div class="redvelvet-button" onclick="updateState(event)">Redvelvet</div>
+      <div id="buy" onclick="buy(true)">Buy</div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
 </html>
